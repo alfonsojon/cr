@@ -176,7 +176,7 @@ do_devtools() {
   else
     mkdir -p "$GYP_FILE" && rmdir "$GYP_FILE"
     if [ $(stat -c "%U" "$GYP_FILE") -ne "$(id -n -u)"]; then
-        echo "WARNING: $GYP_FILE is not owned by the current user!"
+      echo "WARNING: $GYP_FILE is not owned by the current user!"
     fi
     echo "{
   'variables': {
